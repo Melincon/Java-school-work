@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_lb25.FXMLDocumentController">
+   <children>
+      <TextField layoutX="145.0" layoutY="54.0" />
+      <Label layoutX="246.0" layoutY="23.0" text="Travel Reservation" underline="true" />
+      <TextField layoutX="146.0" layoutY="88.0" />
+      <TextField layoutX="145.0" layoutY="131.0" />
+      <TextField layoutX="145.0" layoutY="169.0" />
+      <TextField layoutX="145.0" layoutY="207.0" />
+      <TextField layoutX="145.0" layoutY="245.0" />
+      <Label layoutX="54.0" layoutY="58.0" text="First Name:" />
+      <Label layoutX="54.0" layoutY="95.0" text="Last Name:" />
+      <Label layoutX="54.0" layoutY="135.0" text="Address:" />
+      <Label layoutX="54.0" layoutY="173.0" text="City:" />
+      <Label layoutX="54.0" layoutY="211.0" text="State:" />
+      <Label layoutX="54.0" layoutY="249.0" text="Zip-code:" />
+      <RadioButton fx:id="oneWay" layoutX="54.0" layoutY="300.0" mnemonicParsing="false" text="One-way Ticket">
+         <toggleGroup>
+            <ToggleGroup fx:id="ticketGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="twoWay" layoutX="54.0" layoutY="340.0" mnemonicParsing="false" text="Two-way Ticket" toggleGroup="$ticketGroup" />
+      <Label layoutX="400.0" layoutY="58.0" text="Departing:" underline="true" />
+      <RadioButton fx:id="lgaDepart" layoutX="520.0" layoutY="58.0" mnemonicParsing="false" text="New York, NY (LGA)">
+         <toggleGroup>
+            <ToggleGroup fx:id="departingGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="jfkDepart" layoutX="520.0" layoutY="83.0" mnemonicParsing="false" text="New York, NY (JFK)" toggleGroup="$departingGroup" />
+      <RadioButton fx:id="ewrDepart" layoutX="520.0" layoutY="108.0" mnemonicParsing="false" text="Newark, NY (EWR)" toggleGroup="$departingGroup" />
+      <RadioButton fx:id="bwiDepart" layoutX="520.0" layoutY="133.0" mnemonicParsing="false" text="Baltimore, MD (BWI)" toggleGroup="$departingGroup" />
+      <Label layoutX="400.0" layoutY="158.0" text="Arriving:" underline="true" />
+      <RadioButton fx:id="lhrArrive" layoutX="520.0" layoutY="158.0" mnemonicParsing="false" text="London, England (LHR)">
+         <toggleGroup>
+            <ToggleGroup fx:id="arrivingGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="cdgArrive" layoutX="520.0" layoutY="183.0" mnemonicParsing="false" text="Paris, France (CDG)" toggleGroup="$arrivingGroup" />
+      <RadioButton fx:id="hndArrive" layoutX="520.0" layoutY="208.0" mnemonicParsing="false" text="Tokyo, Japan (HND)" toggleGroup="$arrivingGroup" />
+      <RadioButton fx:id="yulArrive" layoutX="520.0" layoutY="233.0" mnemonicParsing="false" text="Montreal, Canada (YUL)" toggleGroup="$arrivingGroup" />
+      <RadioButton fx:id="svoArrive" layoutX="520.0" layoutY="258.0" mnemonicParsing="false" text="Moscow, Russia (SVO)" toggleGroup="$arrivingGroup" />
+      <TextField fx:id="subtotalText" editable="false" layoutX="520.0" layoutY="290.0" />
+      <TextField fx:id="taxesText" editable="false" layoutX="520.0" layoutY="325.0" />
+      <TextField fx:id="totalText" editable="false" layoutX="520.0" layoutY="360.0" />
+      <Label layoutX="420.0" layoutY="292.0" text="Subtotal:" />
+      <Label layoutX="420.0" layoutY="329.0" text="Taxes:" />
+      <Label layoutX="420.0" layoutY="364.0" text="Total:" />
+      <Button fx:id="okayButton" layoutX="220.0" layoutY="300.0" mnemonicParsing="false" onAction="#okayButtonAction" text="Okay" />
+      <Button fx:id="cancelButton" layoutX="220.0" layoutY="380.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+      <Sphere layoutX="80.0" layoutY="32.0" radius="0.77" />
+      <Button fx:id="saveButton" layoutX="220.0" layoutY="340.0" mnemonicParsing="false" onAction="#saveButtonAction" text="Save" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="253.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_final_project.ModifyingSentenceCodesController">
+   <children>
+      <Button fx:id="modifyButton" layoutX="132.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleModifyButtonAction" text="Modify" />
+      <TextField fx:id="sentenceCodeTextField" alignment="CENTER" layoutX="99.0" layoutY="86.0" prefHeight="25.0" prefWidth="119.0" promptText="Sentence Code" />
+      <TextField fx:id="offenceTypeTextField" alignment="CENTER" layoutX="84.0" layoutY="136.0" promptText="Offence Type" />
+      <ComboBox fx:id="modifyComboBox" layoutX="83.0" layoutY="33.0" onAction="#handleModifyComboBoxAction" prefWidth="150.0" promptText="Selection Box" />
+      <Button fx:id="exit" layoutX="233.0" layoutY="204.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

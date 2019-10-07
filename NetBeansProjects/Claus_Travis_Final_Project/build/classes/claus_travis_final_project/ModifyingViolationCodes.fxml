@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="258.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_final_project.ModifyingViolationCodesController">
+   <children>
+      <ComboBox fx:id="violationSelectionComboBox" layoutX="77.0" layoutY="14.0" onAction="#handleViolationSelectionComboBoxAction" prefWidth="150.0" promptText="Violaton Selection" />
+      <ComboBox fx:id="sentenceCodeComboBox" layoutX="90.0" layoutY="56.0" onAction="#handleSentenceCodeComboBoxAction" prefHeight="25.0" prefWidth="123.0" promptText="Sentence Code" />
+      <TextArea fx:id="descriptionTextArea" layoutX="52.0" layoutY="129.0" prefHeight="71.0" prefWidth="200.0" promptText="Description..." />
+      <TextField fx:id="violationCodeTextField" layoutX="78.0" layoutY="93.0" promptText="Violation Code" />
+      <Button fx:id="modifyButton" layoutX="127.0" layoutY="219.0" mnemonicParsing="false" onAction="#handleModifyButtonAction" text="Modify" />
+      <Button fx:id="exit" layoutX="220.0" layoutY="213.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

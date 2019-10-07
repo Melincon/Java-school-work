@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_hw26.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="194.0" layoutY="14.0" text="Countries Database Example" />
+      <Label layoutX="36.0" layoutY="35.0" text="Country" />
+      <ComboBox fx:id="countryComboBox" layoutX="36.0" layoutY="56.0" onAction="#handleComboAction" prefWidth="150.0" />
+      <Label layoutX="36.0" layoutY="99.0" text="Continent" />
+      <TextField fx:id="continentTextField" editable="false" layoutX="36.0" layoutY="126.0" />
+      <Label layoutX="36.0" layoutY="165.0" text="Cities" />
+      <ListView fx:id="citiesListView" layoutX="36.0" layoutY="186.0" prefHeight="194.0" prefWidth="200.0" />
+      <Label layoutX="289.0" layoutY="56.0" text="Population" />
+      <TextField fx:id="populationTextField" editable="false" layoutX="289.0" layoutY="84.0" />
+      <Label layoutX="289.0" layoutY="131.0" text="Political System" />
+      <TextField fx:id="politicalSystemTextField" editable="false" layoutX="289.0" layoutY="160.0" />
+      <TextField fx:id="primaryReligionTextField" editable="false" layoutX="290.0" layoutY="232.0" />
+      <TextField fx:id="languageTextField" editable="false" layoutX="290.0" layoutY="307.0" />
+      <Label layoutX="290.0" layoutY="207.0" text="Primary Religion" />
+      <Label layoutX="290.0" layoutY="273.0" text="Language" />
+    </children>
+</AnchorPane>

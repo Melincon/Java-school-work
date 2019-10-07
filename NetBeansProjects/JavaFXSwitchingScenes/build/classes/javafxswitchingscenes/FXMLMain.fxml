@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootAnchor" prefHeight="436.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxswitchingscenes.FXMLMainController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="mnuFileClose" mnemonicParsing="false" onAction="#handlemnuFileClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Client">
+            <items>
+              <MenuItem fx:id="mnuClientAdd" mnemonicParsing="false" onAction="#handleMnuClientAdd" text="Add" />
+                  <MenuItem fx:id="mnuClientRemove" mnemonicParsing="false" onAction="#handleMnuClientRemove" text="Remove" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <StackPane layoutY="27.0" prefHeight="408.0" prefWidth="440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+   </children>
+</AnchorPane>

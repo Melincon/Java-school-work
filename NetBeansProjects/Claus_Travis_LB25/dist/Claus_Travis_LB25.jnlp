@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Claus_Travis_LB25.jnlp">
+  <information>
+    <title>Claus_Travis_LB25</title>
+    <vendor>Travis</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Claus_Travis_LB25.jar" size="4680" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Claus_Travis_LB25" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="claus_travis_lb25.Claus_Travis_LB25"  name="Claus_Travis_LB25" />
+  <update check="always"/>
+</jnlp>

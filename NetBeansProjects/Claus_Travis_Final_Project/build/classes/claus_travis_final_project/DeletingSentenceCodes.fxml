@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="247.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_final_project.DeletingSentenceCodesController">
+   <children>
+      <TextField fx:id="sentenceCodeTextField" alignment="CENTER" editable="false" layoutX="84.0" layoutY="81.0" prefHeight="25.0" prefWidth="122.0" promptText="Sentence Code" />
+      <TextField fx:id="offenceTypeTextField" alignment="CENTER" editable="false" layoutX="71.0" layoutY="134.0" promptText="Offence Type" />
+      <Button fx:id="deleteButton" layoutX="120.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" text="Delete" />
+      <Button fx:id="exit" layoutX="206.0" layoutY="189.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <ComboBox fx:id="deleteComboBox" layoutX="70.0" layoutY="28.0" onAction="#handleDeleteComboBoxAction" prefWidth="150.0" promptText="Selection" />
+   </children>
+</AnchorPane>

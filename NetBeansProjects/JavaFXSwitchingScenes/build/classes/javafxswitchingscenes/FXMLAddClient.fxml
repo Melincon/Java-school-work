@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="393.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxswitchingscenes.FXMLAddClientController">
+   <children>
+      <Label alignment="CENTER" layoutY="52.0" prefHeight="17.0" prefWidth="600.0" text="Client - Add" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClose" layoutX="174.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleBtnClose" text="Close" />
+   </children>
+</AnchorPane>

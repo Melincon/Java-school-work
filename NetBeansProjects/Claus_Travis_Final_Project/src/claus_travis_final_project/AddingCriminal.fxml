@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_final_project.AddingCriminalController">
+   <children>
+      <Label layoutX="28.0" layoutY="65.0" prefHeight="21.0" prefWidth="165.0" text="Social Security Number:" />
+      <Label layoutX="333.0" layoutY="65.0" text="-" />
+      <TextField fx:id="ssnTextField3" layoutX="360.0" layoutY="59.0" prefHeight="31.0" prefWidth="48.0" promptText="999" />
+      <TextField fx:id="ssnTextField1" layoutX="196.0" layoutY="60.0" prefHeight="31.0" prefWidth="48.0" promptText="999" />
+      <Label layoutX="251.0" layoutY="64.0" text="-" />
+      <TextField fx:id="ssnTextField2" layoutX="273.0" layoutY="59.0" prefHeight="31.0" prefWidth="57.0" promptText="99" />
+      <TextField fx:id="birthCountryTextField" layoutX="127.0" layoutY="107.0" />
+      <TextField fx:id="firstNameTextField" layoutX="115.0" layoutY="149.0" />
+      <TextField fx:id="lastNameTextField" layoutX="115.0" layoutY="193.0" />
+      <TextField fx:id="dobTextField1" layoutX="123.0" layoutY="234.0" prefHeight="25.0" prefWidth="39.0" promptText="mm" />
+      <Label layoutX="28.0" layoutY="111.0" text="Birth Country:" />
+      <Label layoutX="28.0" layoutY="154.0" text="First Name:" />
+      <Label layoutX="28.0" layoutY="198.0" text="Last Name:" />
+      <Label layoutX="28.0" layoutY="239.0" text="Date Of Birth:" />
+      <Label layoutX="28.0" layoutY="276.0" text="Address:" />
+      <TextField fx:id="addressTextField" layoutX="100.0" layoutY="271.0" />
+      <Label layoutX="325.0" layoutY="111.0" text="City:" />
+      <Label layoutX="325.0" layoutY="154.0" text="State:" />
+      <Label layoutX="325.0" layoutY="198.0" text="Zip:" />
+      <TextField fx:id="cityTextField" layoutX="374.0" layoutY="107.0" />
+      <TextField fx:id="stateTextField" layoutX="374.0" layoutY="149.0" />
+      <TextField fx:id="zipTextField" layoutX="374.0" layoutY="193.0" />
+      <Label layoutX="165.0" layoutY="238.0" text="/" />
+      <Label layoutX="221.0" layoutY="238.0" text="/" />
+      <TextField fx:id="dobTextField2" layoutX="174.0" layoutY="234.0" prefHeight="25.0" prefWidth="39.0" promptText="dd" />
+      <TextField fx:id="dobTextField3" layoutX="236.0" layoutY="234.0" prefHeight="25.0" prefWidth="59.0" promptText="yyyy" />
+      <Button fx:id="addButton" layoutX="336.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleAddButtonAction" text="Add" />
+      <Button fx:id="exit" layoutX="259.0" layoutY="340.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

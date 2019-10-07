@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="223.0" prefWidth="294.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_final_project.AddingSentenceCodesController">
+   <children>
+      <TextField fx:id="sentenceCodeTextField" layoutX="98.0" layoutY="48.0" prefHeight="25.0" prefWidth="98.0" promptText="Sentence Code" />
+      <Button fx:id="addButton" layoutX="128.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleAddButtonAction" text="Add" />
+      <TextField fx:id="offenceTypeTextField" alignment="CENTER" layoutX="73.0" layoutY="99.0" promptText="Offence Type" />
+      <Button fx:id="exit" layoutX="196.0" layoutY="163.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

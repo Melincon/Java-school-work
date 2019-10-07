@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="462.0" minWidth="691.0" prefHeight="462.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="claus_travis_final_project.DeletingViolationController">
+   <children>
+      <Label layoutX="558.0" layoutY="177.0" text="years" />
+      <Button fx:id="deleteButton" layoutX="61.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" text="Delete" />
+      <TextField fx:id="sentenceLengthTextField" editable="false" layoutX="490.0" layoutY="173.0" prefHeight="25.0" prefWidth="58.0" promptText="7" />
+      <TextField fx:id="convictionDateTextField3" editable="false" layoutX="615.0" layoutY="136.0" prefHeight="25.0" prefWidth="41.0" promptText="yyyy" />
+      <TextField fx:id="convictionDateTextField2" editable="false" layoutX="554.0" layoutY="136.0" prefHeight="25.0" prefWidth="44.0" promptText="dd" />
+      <TextField fx:id="convictionDateTextField1" editable="false" layoutX="490.0" layoutY="137.0" prefHeight="25.0" prefWidth="41.0" promptText="mm" />
+      <RadioButton fx:id="isNotPaidRadioButton" layoutX="550.0" layoutY="86.0" mnemonicParsing="false" selected="true" text="Not Paid">
+         <toggleGroup>
+            <ToggleGroup fx:id="isPaidToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="isPaidRadioButton" layoutX="494.0" layoutY="86.0" mnemonicParsing="false" text="Paid" toggleGroup="$isPaidToggleGroup" />
+      <TextField fx:id="fineAmountTextField" editable="false" layoutX="490.0" layoutY="50.0" promptText="000.00" />
+      <TextField fx:id="violationLocationTextField" editable="false" layoutX="163.0" layoutY="224.0" />
+      <TextField fx:id="violationDateTextField3" editable="false" layoutX="267.0" layoutY="127.0" prefHeight="25.0" prefWidth="41.0" promptText="yyyy" />
+      <TextField fx:id="violationDateTextField2" editable="false" layoutX="207.0" layoutY="128.0" prefHeight="25.0" prefWidth="41.0" promptText="dd" />
+      <TextField fx:id="violationDateTextField1" editable="false" layoutX="146.0" layoutY="127.0" prefHeight="25.0" prefWidth="41.0" promptText="mm" />
+      <TextArea fx:id="commentsTextArea" editable="false" layoutX="431.0" layoutY="289.0" prefHeight="111.0" prefWidth="197.0" />
+      <Label layoutX="310.0" layoutY="317.0" text="Comments" />
+      <Label layoutX="362.0" layoutY="178.0" text="Sentence Length:" />
+      <Label layoutX="603.0" layoutY="141.0" text="/" />
+      <Label layoutX="537.0" layoutY="141.0" text="/" />
+      <Label layoutX="372.0" layoutY="142.0" text="Conviction Date:" />
+      <Label layoutX="377.0" layoutY="55.0" text="Fine Amount:" />
+      <Label layoutX="19.0" layoutY="229.0" text="Violation Location:" />
+      <Label layoutX="21.0" layoutY="176.0" text="Violation Code:" />
+      <Label layoutX="256.0" layoutY="131.0" text="/" />
+      <Label layoutX="193.0" layoutY="131.0" text="/" />
+      <Label layoutX="22.0" layoutY="132.0" text="Violation Date:" />
+      <Label layoutX="47.0" layoutY="91.0" text="Offender:" />
+      <Label layoutX="40.0" layoutY="54.0" text="Violation ID:" />
+      <ComboBox fx:id="violationIDComboBox" layoutX="153.0" layoutY="49.0" onAction="#handleViolationIDComboBoxAction" prefWidth="150.0" />
+      <TextField editable="false" layoutX="153.0" layoutY="87.0" />
+      <TextField editable="false" layoutX="153.0" layoutY="172.0" />
+      <Button fx:id="exit" layoutX="192.0" layoutY="336.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>
